@@ -2,7 +2,7 @@
 import os
 
 from app import create_app
-from flask_script import Manager ,Shell
+
 
 app_task=create_app(os.getenv('FLASK_CONFIG') or 'default')
 #集成python shell ,就不用每次导入模型了，数据库实例等
